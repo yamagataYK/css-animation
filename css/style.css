@@ -40,8 +40,8 @@ body {
     height: 100px;
     margin: 10px;
     background-color: aquamarine;
-    transform-origin: top left;
     transition: transform 1s;
+    transform-origin: top left;
 }
 
 .box3:hover {
@@ -71,4 +71,81 @@ body {
 .box5:hover {
     /* transformに上の三つ全部入れる */
     transform: translate(200px, 200px) scale(5, 5) rotate(240deg);
+}
+
+.box6 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: chocolate;
+    /* transition: transform 1s, background-color, 1s; */
+    transition: all 1s;
+}
+
+.box6:hover {
+    transform: translateX(80px);
+    background-color: blue;
+}
+
+/* box__wrap-second */
+.box7,
+.box8,
+.box9,
+.box10,
+.box11 {
+    margin: 20px;
+    height: 75px;
+    background-color: rgb(23, 152, 112);
+}
+
+.box7 {
+    width: 75px;
+    transition: width 2s;
+    transition-timing-function: ease;
+}
+
+.box7:hover {
+    width: 300px;
+}
+
+.box8 {
+    width: 75px;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+
+.box8:hover {
+    width: 300px;
+}
+
+.box9 {
+    width: 75px;
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+
+.box9:hover {
+    width: 300px;
+
+}
+
+.box10 {
+    width: 75px;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.box10:hover {
+    width: 300px;
+}
+
+.box11 {
+    width: 75px;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+
+.box11:hover {
+    width: 300px;
 }
