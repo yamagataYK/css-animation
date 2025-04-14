@@ -1,0 +1,9 @@
+html {
+    font-size: 62.5%;
+}
+
+.test {
+    width: 240px;
+    height: 240px;
+    background-color: aqua;
+}
