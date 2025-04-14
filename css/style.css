@@ -2,8 +2,73 @@ html {
     font-size: 62.5%;
 }
 
-.test {
-    width: 240px;
-    height: 240px;
+body {
+    padding: 10px;
+}
+
+.box__wrap {
+    display: flex;
+    1
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
     background-color: aqua;
+    transition: background-color 2s 0.3s;
+}
+
+.box1:hover {
+    background-color: blue;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: crimson;
+    transition: transform 1s;
+}
+
+.box2:hover {
+    transform: translate(60px, 30px);
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: aquamarine;
+    transform-origin: top left;
+    transition: transform 1s;
+}
+
+.box3:hover {
+    transform: scale(2, 3);
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: blueviolet;
+    transition: transform 1s;
+}
+
+.box4:hover {
+    transform: rotate(240deg);
+}
+
+.box5 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: cadetblue;
+    transition: transform 1s;
+}
+
+.box5:hover {
+    /* transformに上の三つ全部入れる */
+    transform: translate(200px, 200px) scale(5, 5) rotate(240deg);
 }
