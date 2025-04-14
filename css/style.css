@@ -150,16 +150,19 @@ body {
 }
 
 /* box__wrap-animation */
+
+
 .box12 {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
     background-color: #e13434;
     animation: back 3s;
 }
 
 @keyframes back {
     0% {
-        background-color: rgb(21, 37, 220);
+        background-color: #0d1bbb;
     }
 
     50% {
@@ -168,5 +171,35 @@ body {
 
     100% {
         background-color: #8534e2;
+    }
+}
+
+.box13 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #d1ed33;
+    animation: bc 4s;
+    /* animation-timing-function: linear; 一定スピードで伸びる　*/
+    /* animation-direction: reverse; 逆に動く　*/
+    /* animation-direction: alternate; 動いた後、戻っていく　*/
+    /* animation-fill-mode: forwards; 動いた後止まる */
+    /* animation-iteration-count: infinite; 無限 */
+}
+
+@keyframes bc {
+    0% {
+        width: 130px;
+        background-color: #49f315;
+    }
+
+    50% {
+        width: 200px;
+        background-color: #1cd5a7;
+    }
+
+    100% {
+        width: 200px;
+        background-color: #06360f;
     }
 }
