@@ -1,10 +1,6 @@
-'use strict';
+const menu = document.querySelector('.menu__btn');
 
-{
-    const menu = document.querySelector('.menu__btn');
+menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
 
-    menu.addEventListener('click', () => {
-        menu.classList.toggle('active');
-
-    });
-}
+});
