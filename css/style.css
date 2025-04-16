@@ -184,7 +184,8 @@ body {
     /* animation-direction: reverse; 逆に動く　*/
     /* animation-direction: alternate; 動いた後、戻っていく　*/
     /* animation-fill-mode: forwards; 動いた後止まる */
-    /* animation-iteration-count: infinite; 無限 */
+    animation-iteration-count: infinite;
+    /*無限 */
 }
 
 @keyframes bc {
